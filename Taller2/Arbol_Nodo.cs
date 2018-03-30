@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Taller2
 {
-    class Arbol_Nodo
+    public class Arbol_Nodo
     {
         public Arbolito raiz;
         public Arbolito actual;
@@ -89,6 +89,15 @@ namespace Taller2
 
         }
 
+        public void modificar(String pNombre, int pEstatura)
+        {
+
+        }
+
+        public void eliminar()
+        {
+
+        }
 
 
 

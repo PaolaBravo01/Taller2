@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Taller2
 {
-    class Arbolito
+    public class Arbolito
     {
         private Arbolito izquierda;
         private Arbolito derecha;
