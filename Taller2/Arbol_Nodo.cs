@@ -11,6 +11,17 @@ namespace Taller2
         public Arbolito raiz;
         public Arbolito actual;
 
+        
+        public Arbolito getActual()
+        {
+            return actual;
+        }
+
+        public void setActual(Arbolito pActual)
+        {
+            actual = pActual;
+        }
+
         public bool estaVacio()
         {
             if(raiz == null)

@@ -34,6 +34,17 @@ namespace Taller2
 
         }
 
+        private void butAddIzq_Click(object sender, EventArgs e)
+        {
+            String nombre = txtNombre.Text;
+            int estatura = Int32.Parse(txtEstatura.Text);
+
+            Arbolito nuevo = new Arbolito(estatura, nombre, null, null, null);
+
+            arbol.agregarNodoIzq(nuevo);
+        }
+        
+
         public void mostrar(Arbolito actual)
         {
             if(actual == null)
@@ -51,7 +62,9 @@ namespace Taller2
 
         private void butMostrar_Click(object sender, EventArgs e)
         {
-
+            mostrar(arbol.getActual());
         }
+
+       
     }
 }

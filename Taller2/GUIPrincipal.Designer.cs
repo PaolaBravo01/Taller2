@@ -121,6 +121,7 @@
             this.butAddIzq.TabIndex = 4;
             this.butAddIzq.Text = "Agregar Izquierda";
             this.butAddIzq.UseVisualStyleBackColor = true;
+            this.butAddIzq.Click += new System.EventHandler(this.butAddIzq_Click);
             // 
             // butAddDer
             // 
