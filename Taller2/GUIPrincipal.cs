@@ -65,6 +65,20 @@ namespace Taller2
             mostrar(arbol.getActual());
         }
 
-       
+        private void butDer_Click(object sender, EventArgs e)
+        {
+
+            arbol.moverDer();
+        }
+
+        private void butIzq_Click(object sender, EventArgs e)
+        {
+            arbol.moverIzq();
+        }
+
+        private void butArriba_Click(object sender, EventArgs e)
+        {
+            arbol.moverArriba();
+        }
     }
 }

@@ -60,6 +60,7 @@
             this.butArriba.TabIndex = 8;
             this.butArriba.Text = "^";
             this.butArriba.UseVisualStyleBackColor = true;
+            this.butArriba.Click += new System.EventHandler(this.butArriba_Click);
             // 
             // butIzq
             // 
@@ -70,6 +71,7 @@
             this.butIzq.TabIndex = 9;
             this.butIzq.Text = "<";
             this.butIzq.UseVisualStyleBackColor = true;
+            this.butIzq.Click += new System.EventHandler(this.butIzq_Click);
             // 
             // butDer
             // 
@@ -80,6 +82,7 @@
             this.butDer.TabIndex = 10;
             this.butDer.Text = ">";
             this.butDer.UseVisualStyleBackColor = true;
+            this.butDer.Click += new System.EventHandler(this.butDer_Click);
             // 
             // labNombre
             // 
@@ -115,7 +118,7 @@
             // 
             // butAddIzq
             // 
-            this.butAddIzq.Location = new System.Drawing.Point(129, 108);
+            this.butAddIzq.Location = new System.Drawing.Point(25, 108);
             this.butAddIzq.Name = "butAddIzq";
             this.butAddIzq.Size = new System.Drawing.Size(98, 23);
             this.butAddIzq.TabIndex = 4;
@@ -125,7 +128,7 @@
             // 
             // butAddDer
             // 
-            this.butAddDer.Location = new System.Drawing.Point(25, 108);
+            this.butAddDer.Location = new System.Drawing.Point(127, 108);
             this.butAddDer.Name = "butAddDer";
             this.butAddDer.Size = new System.Drawing.Size(98, 23);
             this.butAddDer.TabIndex = 3;
