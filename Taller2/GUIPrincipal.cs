@@ -19,7 +19,7 @@ namespace Taller2
         {
             InitializeComponent();
             arbol = new Arbol_Nodo();
-            
+
         }
 
         private void butAddDer_Click(object sender, EventArgs e)
@@ -43,11 +43,11 @@ namespace Taller2
 
             arbol.agregarNodoIzq(nuevo);
         }
-        
+
 
         public void mostrar(Arbolito actual)
         {
-            if(actual == null)
+            if (actual == null)
             {
                 rbtArbol.Text = "Arbol vacio";
 
@@ -80,5 +80,18 @@ namespace Taller2
         {
             arbol.moverArriba();
         }
+
+        private void butModificar_Click(object sender, EventArgs e)
+        {
+            String nombre = txtNombre.Text;
+            int estatura = Int32.Parse(txtEstatura.Text);
+
+            arbol.modificar(nombre, estatura);
+        }
+
+        private void butEliminar_Click(object sender, EventArgs e)
+        {
+            arbol.eliminar();
+        } 
     }
 }

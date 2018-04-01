@@ -102,11 +102,25 @@ namespace Taller2
 
         public void modificar(String pNombre, int pEstatura)
         {
-
+            if(!estaVacio())
+            {
+                actual.setNombre(pNombre);
+                actual.setEstatura(pEstatura);
+            }
         }
 
         public void eliminar()
         {
+            if(!estaVacio())
+            {
+                Arbolito temp = actual.getDerecha();
+                Arbolito temp2 = actual.getIzquierda();
+                Arbolito temp3 = actual.getArriba();
+                actual.setDerecha(temp.getDerecha());
+                actual.setIzquierda(temp2.getIzquierda());
+                actual.setArriba(temp3.getArriba());
+
+            }
 
         }
 

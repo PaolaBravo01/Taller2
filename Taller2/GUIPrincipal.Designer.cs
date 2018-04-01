@@ -154,6 +154,7 @@
             this.butModificar.TabIndex = 5;
             this.butModificar.Text = "Modificar";
             this.butModificar.UseVisualStyleBackColor = true;
+            this.butModificar.Click += new System.EventHandler(this.butModificar_Click);
             // 
             // butEliminar
             // 
@@ -163,6 +164,7 @@
             this.butEliminar.TabIndex = 6;
             this.butEliminar.Text = "Eliminar";
             this.butEliminar.UseVisualStyleBackColor = true;
+            this.butEliminar.Click += new System.EventHandler(this.butEliminar_Click);
             // 
             // GUIPrincipal
             // 
